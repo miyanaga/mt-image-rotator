@@ -1,4 +1,12 @@
 mt-image-rotator
 ================
 
-Makes rotatable image asset.
+Makes image asset rotatable on management screen.
+
+## On Asset Editing
+
+See side bar.
+
+## On Asset Listing
+
+See list actions pulldown.
