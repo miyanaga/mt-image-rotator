@@ -1,0 +1,40 @@
+id: ImageRotator
+name: ImageRotator
+
+permissions:
+  blog.edit_assets:
+    permitted_action:
+      rotate_image: 1
+
+applications:
+  cms:
+    callbacks:
+      template_param.edit_asset: $ImageRotator::MT::ImageRotator::CMS::template_param_edit_asset
+      template_param.list_common: $ImageRotator::MT::ImageRotator::CMS::template_param_list_common
+    methods:
+      single_rotate_image: $ImageRotator::MT::ImageRotator::CMS::single_rotate_image
+    list_actions:
+      asset:
+        rotate_90:
+          label: Rotate 90 Deg. Clockwise
+          order: 100
+          code: $ImageRotator::MT::ImageRotator::CMS::bulk_rotate_image
+          permit_action:
+            permit_action: rotate_image
+            include_all: 1
+        rotate_180:
+          label: Rotate 180 Deg.
+          order: 200
+          code: $ImageRotator::MT::ImageRotator::CMS::bulk_rotate_image
+          permit_action:
+            permit_action: rotate_image
+            include_all: 1
+        rotate_270:
+          label: Rotate 90 Deg. Counter Clockwise
+          order: 300
+          code: $ImageRotator::MT::ImageRotator::CMS::bulk_rotate_image
+          permit_action:
+            permit_action: rotate_image
+            include_all: 1
+
+l10n_lexicon: l10n.yaml

@@ -1,0 +1,11 @@
+en_US:
+  BULK_ROTATED_IMAGES: '[_1] image(s) rotated.'
+
+ja:
+  Rotate 90 Deg. Clockwise: 右に90度回転
+  Rotate 180 Deg.: 180度回転
+  Rotate 90 Deg. Counter Clockwise: 左に90度回転
+  Image rotated.: 画像を回転しました
+  BULK_ROTATED_IMAGES: '[_1]枚の画像を回転しました'
+  Image Rotation: 画像の回転
+  Asset is not an image.: アイテムが画像ではありません
