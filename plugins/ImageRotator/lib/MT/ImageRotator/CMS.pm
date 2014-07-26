@@ -2,6 +2,7 @@ package MT::ImageRotator::CMS;
 
 use strict;
 use MT::FileMgr;
+use MT::Image;
 
 sub _rotate_image {
     my ( $app, $asset, $deg ) = @_;
